@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #36393f; /* Discord dark theme background */
+    font-family: Arial, sans-serif;
+    -webkit-text-fill-color: aliceblue;
+}
+
+.btn {
+    background-color: #464c55; /* A shade lighter than Discord dark theme */
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+h1{
+    vertical-align: top;
+    flex-direction: column; /* Stack elements vertically */
+}
+.btn:hover {
+    background-color: #4c525c; /* Slightly lighter shade for hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
