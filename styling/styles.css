@@ -1,11 +1,23 @@
 body {
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     margin: 0;
     background-color: #36393f; /* Discord dark theme background */
-    font-family: poppins, serif;
-    -webkit-text-fill-color: aliceblue;
+    font-family: 'Poppins', serif;
+    color: aliceblue;
+}
+
+h1 {
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.grid-container {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 100px); /* 3 columns of 100px each */
+    grid-gap: 15px; /* Spacing between buttons */
+    justify-content: center; /* Center the grid horizontally */
 }
 
 .btn {
@@ -22,12 +34,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
-h1{
-    vertical-align: top;
-    flex-direction: column; /* Stack elements vertically */
-}
+
 .btn:hover {
     background-color: #4c525c; /* Slightly lighter shade for hover */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
